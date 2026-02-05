@@ -1,10 +1,3 @@
-const NAV = [
-  { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
-  { label: "Engagements", href: "/engagements" },
-  { label: "Contact", href: "/contact" },
-];
-
 const ENGAGEMENTS = [
   {
     title: "Project Reviews",
@@ -35,23 +28,6 @@ function Card({ title, body }: { title: string; body: string }) {
 export default function Page() {
   return (
     <main>
-      <header className="bg-slate-700 text-white">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-          <div className="font-serif text-lg tracking-wide">Saint</div>
-          <nav className="flex gap-6 text-sm">
-            {NAV.map((i) => (
-              <a
-                key={i.href}
-                href={i.href}
-                className="opacity-90 hover:opacity-100"
-              >
-                {i.label}
-              </a>
-            ))}
-          </nav>
-        </div>
-      </header>
-
       <section className="mx-auto max-w-6xl px-6 py-20">
         <h1 className="font-serif text-4xl">Engagements</h1>
         <p className="mt-6 max-w-3xl text-zinc-700 leading-7">
