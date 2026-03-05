@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import Image from "next/image";
 import { DM_Serif_Display, Hammersmith_One } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 
 const serif = DM_Serif_Display({ weight: "400", subsets: ["latin"] });
 const hammersmith = Hammersmith_One({ weight: "400", subsets: ["latin"] });
@@ -72,6 +73,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           .font-hammersmith { font-family: ${hammersmith.style.fontFamily}; }
           body { font-family: Calibri, "Segoe UI", Arial, sans-serif; }
         `}</style>
+        <Analytics />
       </body>
     </html>
   );
