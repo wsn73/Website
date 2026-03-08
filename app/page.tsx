@@ -15,7 +15,7 @@ export default function Page() {
     <main>
       <HomeHero {...home.hero} />
       <HomeProblem {...home.problem} />
-      <HomeEngageTriggers {...home.engage} />
+      {/* <HomeEngageTriggers {...home.engage} /> */}
       <HomePillars
         eyebrow={home.principles.eyebrow}
         title={home.principles.title}

@@ -10,7 +10,7 @@ export default function Card({ title, body, index }: CardProps) {
   const label =
     typeof index === "number" && ROMANS[index] ? ROMANS[index] : "I";
   return (
-    <div className="group rounded-2xl border border-[#D9E0F5] bg-[#F5F7FF] p-6 shadow-sm transition hover:shadow-md">
+    <div className="group rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-sm transition hover:shadow-md">
       <div className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-100 text-[#4A5D93]">
         <span className="text-sm font-semibold">{label}</span>
       </div>

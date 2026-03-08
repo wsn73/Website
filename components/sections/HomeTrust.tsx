@@ -4,7 +4,7 @@ type HomeTrustProps = {
   eyebrow: string;
   title: string;
   summary?: string;
-  sectors: string[];
+  sectors?: string[];
   whoTitle?: string;
   whoIntro?: string;
   whoItems?: string[];
@@ -45,7 +45,7 @@ export default function HomeTrust({
                 {summary}
               </p>
             ) : null}
-            <BulletList items={sectors} className="mt-4" />
+            {sectors?.length ? <BulletList items={sectors} className="mt-4" /> : null}
             {whoTitle ? (
               <h3 className="mt-10 font-serif text-3xl text-slate-900">{whoTitle}</h3>
             ) : null}

@@ -15,7 +15,7 @@ const NAV = [
 
 export const metadata: Metadata = {
   title: "Saint Consulting",
-  description: "Predictable delivery of complex investment projects",
+  description: "Predictable delivery of capital projects",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
