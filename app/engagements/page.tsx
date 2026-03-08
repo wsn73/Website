@@ -9,7 +9,7 @@ export default function Page() {
   return (
     <main>
       <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
-        <h1 className="font-serif text-4xl leading-[1.05] text-slate-900 sm:text-5xl lg:text-6xl">
+        <h1 className="font-serif text-3xl leading-[1.05] text-slate-900 sm:text-4xl lg:text-5xl">
           {engagements.title}
         </h1>
         <p className="mt-6 max-w-prose text-base leading-7 text-slate-600 sm:text-xl sm:leading-8">

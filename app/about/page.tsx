@@ -1,3 +1,4 @@
+import Image from "next/image";
 import HomeFooter from "@/components/sections/HomeFooter";
 import { site } from "@/content/site";
 
@@ -6,15 +7,32 @@ export default function Page() {
 
   return (
     <main>
-      <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
-        <h1 className="font-serif text-4xl leading-[1.05] text-slate-900 sm:text-5xl lg:text-6xl">
-          {pages.about.title}
-        </h1>
-        {pages.about.paragraphs.map((text) => (
-          <p key={text} className="mt-6 max-w-prose text-base leading-7 text-slate-600 sm:text-xl sm:leading-8">
-            {text}
-          </p>
-        ))}
+      <section id="about" className="bg-white py-28">
+        <div className="mx-auto grid max-w-7xl grid-cols-1 items-start gap-12 px-6 md:grid-cols-2 lg:px-8">
+          <div>
+            <h1 className="font-serif text-3xl leading-[1.05] text-slate-900 sm:text-4xl lg:text-5xl">
+              {pages.about.title}
+            </h1>
+            {pages.about.paragraphs.map((text) => (
+              <p
+                key={text}
+                className="mt-6 max-w-prose text-base leading-7 text-slate-600 sm:text-xl sm:leading-8"
+              >
+                {text}
+              </p>
+            ))}
+          </div>
+
+          <div className="relative w-full max-w-[250px] md:justify-self-end">
+            <Image
+              src="/wsn.jpg"
+              alt="Wouter - founder of Saint Consulting"
+              width={250}
+              height={300}
+              className="rounded-2xl object-cover"
+            />
+          </div>
+        </div>
       </section>
 
       <HomeFooter

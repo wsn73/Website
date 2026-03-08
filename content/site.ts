@@ -21,30 +21,28 @@ export const site = {
       cta: { label: "Start a conversation", href: "/contact" },
     },
     problem: {
-      eyebrow: "Where projects lose clarity",
-      title: "What often goes wrong before execution starts",
+      eyebrow: "The problem",
+      title: "Where decision quality breaks down",
       intro:
-        "Capital projects rarely struggle because of a lack of expertise. More often, they lose clarity in the front-end phase.",
+        "Capital projects rarely struggle because of lack of expertise. More often, a clear decision framework is missing and it is unclear how technical and commercial progress align and which documents need to be produced when.",
       items: [
         {
-          title: "Decisions do not fully close key issues",
-          body: "Projects progress, but underlying choices, trade-offs or assumptions remain unresolved.",
+          title: "Deliverables do not support the decisions to be made",
+          body: "Large volumes of documentation are produced, but it remains unclear what information is required for a specific decision. Different options are supported by different levels of evidence, while key assumptions and open issues remain difficult to identify.",
         },
         {
-          title: "Technical and commercial work move out of sync",
-          body: "Workstreams move in parallel, but not closely enough together to support robust decisions.",
+          title: "Technical and commercial work drift apart",
+          body: "Engineering and commercial workstreams progress in parallel, but not closely enough aligned. Options evolve, costs shift, and risks change without a shared decision view, making robust project choices difficult.",
         },
         {
-          title: "Decision ownership and escalation are unclear",
-          body: "Governance structures exist, but it remains unclear who ultimately owns decisions or how issues should escalate.",
+          title: "Decision gates leave key issues unresolved",
+          body: "Criteria may be interpreted flexibly, documentation accepted conditionally, and projects proceed despite unresolved assumptions or incomplete evidence.",
         },
         {
-          title: "Tollgates confirm progress rather than test readiness",
-          body: "Formal reviews take place, but they often confirm momentum instead of rigorously testing whether the project is ready to proceed.",
+          title: "Decisions lack robustness",
+          body: "Projects appear to move forward, but earlier decisions are repeatedly revisited. Trade-offs were not fully explored, key assumptions remained implicit, and uncertainties were not resolved before approval.",
         },
       ],
-      closing:
-        "By the time these issues become visible in execution, most of the important choices have already been made.",
     },
     engage: {
       eyebrow: "Situations",
@@ -73,29 +71,29 @@ export const site = {
     },
     principles: {
       eyebrow: "Typical areas of support",
-      title: "How Saint can help",
+      title: "Where Saint can help",
       summary:
-        "In practice, this often means strengthening how early project phases are structured, how decisions are prepared, and how technical and commercial work stay aligned.",
+        "In practice, this means helping projects organise the front-end phases around clear decisions, aligned workstreams, and decision-ready information.",
       items: [
         {
           title: "Structuring early project phases",
           body: "Clarifying how the front-end should be organised and what decisions need to be made when.",
         },
         {
-          title: "Improving decision quality",
-          body: "Making sure the right information is available at key decision moments.",
-        },
-        {
           title: "Keeping technical and commercial development aligned",
           body: "Helping workstreams move together rather than separately.",
+        },
+        {
+          title: "Improving decision quality",
+          body: "Making sure the right information is available at key decision moments and properly laid down in project documentation.",
         },
       ],
       closing:
         "The aim is not to add more process, but to help make the right decisions at the right moment.",
     },
     engagements: {
-      eyebrow: "Services",
-      title: "Services",
+      eyebrow: "Form of support",
+      title: "Our Services",
       intro:
         "Depending on the situation and stage of the project, Saint can support through a number of focused services.",
       link: { label: "View services overview", href: "/engagements" },
@@ -156,26 +154,27 @@ export const site = {
       title: "About Saint",
       paragraphs: [
         "Saint Consulting was founded by Wouter Sint Nicolaas after more than 25 years working on capital projects at organisations including Shell, AkzoNobel / Nobian and HyCC.",
-        "Over the years he has seen many projects struggle not because of a lack of expertise, but because decisions never quite close. Technical and commercial development move in parallel but not fully together, and tollgates often confirm progress rather than truly test readiness.",
-        "By the time problems appear in execution, most of the important choices have already been made.",
-        "Saint Consulting focuses on that earlier front-end phase of projects, working with decision-makers to strengthen how early project phases are structured, how decisions are prepared, and how technical and commercial development stay aligned.",
-        "The name Saint refers to Saint Nicholas, the protector of sailors and merchants, a reminder that navigating uncertainty requires judgment, clarity and steady progress.",
+        "Over the years he worked across project development, project management and owner-side governance. This provided a close view of how large projects actually move forward: not only through engineering and execution, but through the decisions that shape them.",
+        "In many projects he observed a similar pattern. Experienced teams and strong technical work are in place, yet progress becomes uncertain because key decisions remain partially open, are revisited, or are not supported by aligned technical and commercial development.",
+        "By the time difficulties appear during execution, most of the important choices have already been made.",
+        "Saint Consulting focuses on those earlier phases of projects, working with decision-makers to strengthen how projects prepare and test the decisions that define the direction of the project.",
+        "The name Saint reflects both the founder’s surname and Saint Nicholas, the protector of sailors and merchants; a reminder that when visibility is limited and the stakes are high, progress depends on judgment, clarity and steady navigation.",
       ],
       footerSymbol: "(c)",
     },
     contact: {
       title: "Contact",
       intro:
-        "For project or portfolio support, contact Saint Consulting by email.",
+        "For project or portfolio support, you can contact Wouter (founder of Saint Consulting) directly by email.",
       emailLabel: "Email",
       requestNote:
-        "Please include a short description of your situation, current project phase, key decision moments, and preferred timing for a first conversation.",
+        "A short note describing your situation, the current project phase, key decision moments, and preferred timing for a first conversation is helpful.",
       footerSymbol: "(c)",
     },
     engagements: {
       title: "Three ways to work together",
       intro:
-        "Each pathway strengthens decision and delivery control at a different depth, depending on project maturity and urgency.",
+        "Depending on project maturity and urgency, cooperation can take different forms. In many situations, a short health check helps establish a clear view of how the project or portfolio environment is functioning and where support would be most valuable.",
       items: [
         {
           title: "Project Reviews",
