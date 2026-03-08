@@ -1,16 +1,16 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import Image from "next/image";
-import { DM_Serif_Display, Hammersmith_One } from "next/font/google";
+import { DM_Serif_Display, Montserrat } from "next/font/google";
 
 const serif = DM_Serif_Display({ weight: "400", subsets: ["latin"] });
-const hammersmith = Hammersmith_One({ weight: "400", subsets: ["latin"] });
+const montserrat = Montserrat({ subsets: ["latin"] });
 
 const NAV = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
-  { label: "Engagements", href: "/engagements" },
-  { label: "Contact", href: "/contact" },
+  { label: "Our Services", href: "/engagements" },
+  { label: "Contact Us", href: "/contact" },
 ];
 
 export const metadata: Metadata = {
@@ -23,43 +23,57 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="nl">
       <body className="bg-white text-zinc-900">
         <div className="min-h-dvh">
-          <header className="border-b border-slate-200 bg-white text-slate-900">
-            <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-              <div className="flex items-center gap-2">
+          <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/80 text-slate-900 backdrop-blur">
+            <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+              <a href="/" className="flex items-center">
                 <Image
-                  src="/logo.png"
+                  src="/logo-20260209.png"
                   alt="Saint Consulting logo"
-                  width={110}
-                  height={36}
-                  className="h-9 w-auto"
+                  width={1839}
+                  height={179}
+                  className="h-5 w-auto sm:h-7"
                   priority
                 />
-                <div className="inline-block h-9 leading-none -ml-1">
-                  <div
-                    className="font-hammersmith uppercase tracking-[0.22em] text-[#4A5D93]"
-                    style={{ fontSize: "20px", lineHeight: "1" }}
-                  >
-                    Saint Consulting
-                  </div>
-                  <div
-                    className="mt-[2px] w-full text-left font-hammersmith uppercase tracking-[0.04em] text-[#90A2CF]"
-                    style={{ fontSize: "16px", lineHeight: "1", transform: "translate(1.35ch, -1px)" }}
-                  >
-                    Capital Projects Expertise
-                  </div>
-                </div>
-              </div>
-              <nav className="flex gap-7 text-lg font-semibold text-[#4A5D93]">
+              </a>
+              <nav className="hidden items-center gap-6 text-base font-semibold text-[#4A5D93] md:flex">
                 {NAV.map((i) => (
                   <a
                     key={i.href}
                     href={i.href}
-                    className="opacity-80 hover:opacity-100"
+                    className={
+                      i.href === "/contact"
+                        ? "rounded-full bg-[#4A5D93] px-4 py-2 text-xs uppercase tracking-[0.25em] text-white"
+                        : "opacity-80 transition hover:opacity-100"
+                    }
                   >
                     {i.label}
                   </a>
                 ))}
               </nav>
+              <div className="relative md:hidden">
+                <details className="group">
+                  <summary className="list-none rounded-full border border-slate-200 px-4 py-2 text-xs font-semibold uppercase tracking-[0.25em] text-[#4A5D93]">
+                    Menu
+                  </summary>
+                  <div className="absolute right-0 mt-3 w-56 rounded-2xl border border-slate-200 bg-white p-3 shadow-lg">
+                    <div className="flex flex-col gap-2 text-base font-semibold text-[#4A5D93]">
+                      {NAV.map((i) => (
+                        <a
+                          key={i.href}
+                          href={i.href}
+                          className={
+                            i.href === "/contact"
+                              ? "rounded-lg bg-[#4A5D93] px-3 py-2 text-center text-xs uppercase tracking-[0.25em] text-white"
+                              : "rounded-lg px-3 py-2 opacity-80 hover:bg-slate-50 hover:opacity-100"
+                          }
+                        >
+                          {i.label}
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                </details>
+              </div>
             </div>
           </header>
 
@@ -69,8 +83,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* helper class to match your serif headings */}
         <style>{`
           .font-serif { font-family: ${serif.style.fontFamily}; }
-          .font-hammersmith { font-family: ${hammersmith.style.fontFamily}; }
-          body { font-family: Calibri, "Segoe UI", Arial, sans-serif; }
+          body { font-family: ${montserrat.style.fontFamily}, Arial, sans-serif; }
         `}</style>
       </body>
     </html>

@@ -1,26 +1,26 @@
+import PageFooterDark from "@/components/sections/PageFooterDark";
+import { site } from "@/content/site";
+
 export default function Page() {
+  const { pages, companyName } = site;
+
   return (
     <main>
-      <section className="mx-auto max-w-6xl px-6 py-20">
-        <h1 className="font-serif text-4xl">About</h1>
-        <p className="mt-6 max-w-3xl text-zinc-700 leading-7">
-          Saint Consulting supports organisations with decision clarity, governance
-          that fits the real project, and hands-on execution support. We integrate
-          the right project data and documentation into day-to-day delivery so
-          decisions are traceable and teams stay aligned.
-        </p>
-        <p className="mt-6 max-w-3xl text-zinc-700 leading-7">
-          The work is pragmatic and senior-led, focused on moments where the cost
-          of ambiguity is highest: investment decisions, scope change, and project
-          recovery.
-        </p>
+      <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
+        <h1 className="font-serif text-4xl leading-[1.05] text-slate-900 sm:text-5xl lg:text-6xl">
+          {pages.about.title}
+        </h1>
+        {pages.about.paragraphs.map((text) => (
+          <p key={text} className="mt-6 max-w-prose text-base leading-7 text-slate-600 sm:text-xl sm:leading-8">
+            {text}
+          </p>
+        ))}
       </section>
 
-      <footer className="bg-slate-700 text-white">
-        <div className="mx-auto max-w-6xl px-6 py-6 text-sm opacity-90">
-          (c) {new Date().getFullYear()} Saint Consulting
-        </div>
-      </footer>
+      <PageFooterDark
+        companyName={companyName}
+        symbol={pages.about.footerSymbol}
+      />
     </main>
   );
 }

@@ -1,0 +1,14 @@
+﻿Content Update Instructions
+
+All editable copy now lives in: content/site.ts
+
+Update these sections:
+1. Home page text: site.home
+2. About page text: site.pages.about
+3. Contact page text: site.pages.contact
+4. Engagements page text: site.pages.engagements
+5. Engagements list (single source of truth): site.pages.engagements.items
+
+Notes:
+- Do not edit text directly in app/*/page.tsx.
+- Keep headings and labels consistent across pages.
