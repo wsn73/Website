@@ -5,6 +5,7 @@ type HomePillarsProps = {
   title: string;
   items: { title: string; body: string }[];
   summary?: string;
+  closing?: string;
 };
 
 export default function HomePillars({
@@ -12,17 +13,20 @@ export default function HomePillars({
   title,
   items,
   summary,
+  closing,
 }: HomePillarsProps) {
   return (
     <section className="border-b border-slate-200 bg-white">
-      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
+      <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:px-8 lg:py-24">
         <div className="mb-10">
           <p className="text-xs uppercase tracking-[0.35em] text-[#90A2CF]">
             {eyebrow}
           </p>
-          <h2 className="font-serif mt-3 text-4xl text-slate-900">{title}</h2>
+          <h2 className="font-serif mt-3 max-w-4xl text-4xl text-slate-900 sm:text-5xl">
+            {title}
+          </h2>
           {summary ? (
-            <p className="mt-4 text-base leading-7 text-slate-600 sm:text-xl sm:leading-8">
+            <p className="mt-6 max-w-4xl text-base leading-7 text-slate-600 sm:text-xl sm:leading-8">
               {summary}
             </p>
           ) : null}
@@ -37,6 +41,11 @@ export default function HomePillars({
             />
           ))}
         </div>
+        {closing ? (
+          <p className="mt-8 text-base leading-7 text-slate-600 sm:text-xl sm:leading-8">
+            {closing}
+          </p>
+        ) : null}
       </div>
     </section>
   );

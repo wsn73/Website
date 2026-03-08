@@ -1,8 +1,8 @@
-import PageFooterDark from "@/components/sections/PageFooterDark";
+import HomeFooter from "@/components/sections/HomeFooter";
 import { site } from "@/content/site";
 
 export default function Page() {
-  const { pages, companyName, contactEmail } = site;
+  const { pages, home, companyName, contactEmail } = site;
 
   return (
     <main>
@@ -20,16 +20,17 @@ export default function Page() {
               {contactEmail}
             </a>
           </p>
-          <p className="mt-4 text-base italic text-slate-500">
-            Briefly describe your context and where you are in the project.
-            We&apos;ll respond to discuss scope and timing.
+          <p className="mt-6 text-base leading-7 text-slate-600">
+            {pages.contact.requestNote}
           </p>
         </div>
       </section>
 
-      <PageFooterDark
+      <HomeFooter
         companyName={companyName}
-        symbol={pages.contact.footerSymbol}
+        copyrightSymbol={home.contact.copyrightSymbol}
+        company={home.footer.company}
+        email={contactEmail}
       />
     </main>
   );

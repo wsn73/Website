@@ -1,154 +1,205 @@
+type EngagementIcon = "review" | "governance" | "support";
+
+type EngagementItem = {
+  title: string;
+  icon: EngagementIcon;
+  purpose: string;
+  when: string;
+};
+
 export const site = {
   companyName: "Saint Consulting",
   contactEmail: "wouter@saintconsulting.nl",
   home: {
     hero: {
-      title: "The most important decisions are made before project execution",
-      subhead: "Owner-side support for early-phase capital investment decisions",
-      cta: { label: "Start with a focused review", href: "/contact" },
-    },
-    engage: {
-      eyebrow: "Early-phase engagement",
-      title: "Where Saint can add value",
-      intro:
-        "Saint typically supports capital projects in the early and development phases, particularly when:",
-      items: [
-        "A business opportunity is progressing, but a clear structure is needed to align technical and commercial development, often involving multiple parties with different roles, incentives, and ways of working.",
-        "An organisation seeks an independent view on a project’s maturity, risks, and decision readiness.",
-        "A capital investment or gate decision is approaching, but key choices remain implicit.",
-        "Projects move forward on approvals rather than explicit, owned decisions.",
-        "Technical, commercial, and organisational considerations are not yet reconciled.",
-        "Governance and decision rights are defined on paper, but do not work in practice.",
-      ],
+      title:
+        "Helping Companies make critical project decisions before execution begins",
+      subhead:
+        "Saint Consulting provides independent owner-side support in front-end capital project development, where decision quality determines whether delivery becomes predictable, effective and efficient.",
+      description:
+        "Saint is typically engaged when projects or portfolios need explicit decision gates, stronger technical-commercial alignment and clearer steering before major commitments are made.",
+      cta: { label: "Schedule an introduction conversation", href: "/contact" },
     },
     problem: {
       eyebrow: "The problem",
-      title: "Why projects drift (even in experienced organisations)",
+      title: "Why capital projects struggle to reach clear decisions",
       intro:
-        "Capital projects rarely face delays and cost increase because of missing expertise. They face delays and cost increase when decision intent is unclear and readiness is assumed rather than tested.",
-      symptoms: [
-        "Approvals that move projects forward without closing real choices.",
-        "Conditional acceptances that carry unresolved risks into execution.",
-        "Technical and commercial work cycling as assumptions are revisited.",
-        "Governance that tracks progress but does not settle trade-offs.",
-        "Scope and priorities shifting from gate to gate.",
-      ],
-    },
-    principles: {
-      eyebrow: "How Saint works",
-      title: "Securing project value before execution",
-      summary:
-        "Saint supports asset owners in shaping and securing project value in the front-end, where critical decisions determine how value is realised in execution, and where uncertainty can still be reduced deliberately.",
+        "In many projects, unpredictability starts long before execution. Gates approve progress, but core choices remain open.",
       items: [
         {
-          title: "Clear decision intent per gate",
-          body: "Be explicit about the decision that must be made before work advances.",
+          title: "Decisions approved, not resolved",
+          body: "Approvals are granted without explicit choices between real alternatives, so unresolved issues are carried forward.",
         },
         {
-          title: "Explicit decision rights and criteria",
-          body: "Make ownership, thresholds, and acceptance criteria visible and agreed.",
+          title: "Technical and commercial drift",
+          body: "Engineering, cost, risk and contracting logic progress in parallel rather than as one integrated decision basis.",
         },
         {
-          title: "Integrated technical and commercial maturity",
-          body: "Ensure the technical solution and the investment case are aligned at every step.",
+          title: "Governance without steering",
+          body: "Roles and mandates exist, but decision rights, criteria and escalation are not applied with enough discipline.",
         },
         {
-          title: "Minimum decision-ready deliverables",
-          body: "Focus on what leadership needs to decide — not on producing volume.",
+          title: "Decision-ready information is missing",
+          body: "Large document sets are available, but the minimum decision-critical content is inconsistent or incomplete at gate moments.",
+        },
+      ],
+      closing:
+        "The result is rework, delay, cost erosion and value dilution. By execution start, most value-defining choices are already locked in.",
+    },
+    engage: {
+      eyebrow: "Situations",
+      title: "Situations where Saint can be engaged",
+      intro: "Saint Consulting can be brought in when:",
+      items: [
+        {
+          title: "Investment decision approaching",
+          body: "A major investment decision is near, while readiness and alignment remain unclear.",
         },
         {
-          title: "Independent view on readiness",
-          body: "Pressure-test assumptions before they turn into commitments.",
+          title: "Workstreams are misaligned",
+          body: "Technical and commercial development diverge and create uncertainty around next steps.",
+        },
+        {
+          title: "Decisions do not land",
+          body: "Governance exists, but decision ownership and escalation are not working effectively.",
+        },
+        {
+          title: "Independent owner-side view needed",
+          body: "Leadership requires an external perspective to clarify risks, assumptions and choices.",
+        },
+      ],
+      closing:
+        "These situations often arise in the front-end development phase, before execution commitments are made.",
+    },
+    principles: {
+      eyebrow: "Decision clarity",
+      title: "What Saint helps clarify",
+      summary:
+        "Saint applies a practical decision-gate lens to make the basis for commitment explicit. This is typically structured through four routes:",
+      items: [
+        {
+          title: "Assurance Reviews and Health Checks",
+          body: "Independent project reviews to test readiness, expose delivery risks and show where reported progress differs from decision reality.",
+        },
+        {
+          title: "Decision Gate Readiness Support",
+          body: "Sharpening gate intent, criteria and alternatives so decisions close real switches instead of conditionally approving to maintain momentum.",
+        },
+        {
+          title: "Governance and PM Framework Design",
+          body: "Strengthening decision rights, steering cadence, minimum deliverables and portfolio governance so projects are controlled consistently.",
+        },
+        {
+          title: "Implementation and Capability Embedding",
+          body: "Supporting teams in execution of improvements through targeted follow-up, coaching and temporary reinforcement at critical moments.",
+        },
+      ],
+      closing:
+        "The objective is not more process, but stronger decision and delivery control before commitments are made.",
+    },
+    engagements: {
+      eyebrow: "Support structure",
+      title: "How Saint can support",
+      intro:
+        "The homepage gives a short overview. Full service detail is available on the Our Services page.",
+      link: { label: "View full services", href: "/engagements" },
+      items: [
+        {
+          title: "Project Reviews",
+          body: "Independent assessment of decision readiness, delivery risks and immediate priorities.",
+        },
+        {
+          title: "Governance Setup",
+          body: "Clear decision rights, gate criteria and steering structure that work in practice.",
+        },
+        {
+          title: "Hands-on Support",
+          body: "Targeted owner-side reinforcement during critical project phases and decision moments.",
         },
       ],
     },
-    engagements: {
-      eyebrow: "Engagement models",
-      title: "Three ways to engage",
-      link: { label: "View engagement models", href: "/engagements" },
-    },
     contact: {
-      eyebrow: "NEXT STEP",
-      title: "Start with a focused review",
-      ctaLabel: "Start with a focused review",
+      eyebrow: "CALL TO ACTION",
+      title: "Start a conversation",
+      ctaLabel: "Schedule an introduction",
       reassurance:
-        "A short, independent assessment to clarify decision readiness, surface key risks, and define the right next steps.",
+        "If you recognise these patterns in your projects, an initial conversation can help explore where Saint can add value.",
+      highlights: [],
       copyrightSymbol: "©",
     },
     trust: {
-      eyebrow: "Experience across",
-      title: "Capital project experience across sectors",
+      eyebrow: "Clients",
+      title: "Who Saint works with",
       summary:
-        "Owner-side capital project experience across energy, infrastructure, chemical, and manufacturing contexts, including LNG and green hydrogen.",
+        "Saint typically works with decision-makers responsible for major capital investments, including:",
       sectors: [
-        "Energy",
-        "Infrastructure",
-        "Chemical",
-        "Manufacturing",
-        "LNG",
-        "Green Hydrogen",
+        "Project sponsors",
+        "Portfolio leaders",
+        "Heads of projects or capital programmes",
+        "Executive teams overseeing major investments",
+        "Boards or steering committees",
       ],
+      whoIntro:
+        "Engagements typically take place where projects involve significant capital investment and strategic importance.",
     },
     footer: {
-      services: [
-        "Investment decision readiness",
-        "Governance design",
-        "Delivery stabilisation",
-      ],
       company: [
         { label: "About", href: "/about" },
-        { label: "Our Services", href: "/engagements" },
+        { label: "Engagements", href: "/engagements" },
         { label: "Contact", href: "/contact" },
       ],
     },
   },
   pages: {
     about: {
-      title: "About",
+      title: "About Saint",
       paragraphs: [
-        "Saint Consulting supports organisations with decision clarity, governance that fits the real project, and hands-on execution support. We integrate the right project data and documentation into day-to-day delivery so decisions are traceable and teams stay aligned.",
-        "The work is pragmatic and senior-led, focused on moments where the cost of ambiguity is highest: investment decisions, scope change, and project recovery.",
+        "Saint Consulting is an independent owner-side advisory practice focused on decision quality, governance and predictability in capital projects.",
+        "The work draws on more than two decades of capital project experience across energy, chemicals and marine infrastructure, from early development through delivery.",
+        "This includes leadership and assurance experience in environments such as Shell, AkzoNobel/Nobian and HyCC.",
+        "Support spans both hands-on project delivery and portfolio-level oversight, combining technical depth with commercial understanding to improve decision-making at every level.",
+        "Assignments typically involve front-end shaping, gate readiness, project assurance, governance design and practical implementation support in complex investment environments.",
+        "Saint works with project sponsors, portfolio leaders and executive teams to create decision-ready clarity: clear choices, clear ownership and clear next steps.",
       ],
       footerSymbol: "(c)",
     },
     contact: {
-      title: "Start with a focused review",
+      title: "Contact",
       intro:
-        "A focused review is often the most effective way to clarify decision readiness, surface key risks, and agree on the right next steps. If this may be relevant for your situation, reach out to start a conversation.",
+        "For project or portfolio support, contact Saint Consulting by email.",
       emailLabel: "Email",
+      requestNote:
+        "Please include a short description of your situation, current project phase, key decision moments, and preferred timing for a first conversation.",
       footerSymbol: "(c)",
     },
     engagements: {
-      title: "Engagement models",
+      title: "Three ways to work together",
       intro:
-        "Three focused ways to engage when decisions, governance, or alignment are at risk.",
+        "Each pathway strengthens decision and delivery control at a different depth, depending on project maturity and urgency.",
       items: [
         {
           title: "Project Reviews",
           icon: "review",
           purpose:
-            "Independent readiness and decision reviews to surface risks and strengthen the case before a gate.",
-          when: "When a gate or investment decision is approaching.",
+            "Independent readiness and assurance reviews to test decision quality, expose delivery risks and clarify priority actions.",
+          when: "When leadership needs a fast, realistic view before a major decision.",
         },
         {
-          title: "Governance & Steering Setup",
+          title: "Project Governance Setup",
           icon: "governance",
           purpose:
-            "Design governance that works in practice and locks decision rights into real cadence.",
-          when: "When governance exists but decisions do not stick.",
+            "Designing or strengthening decision frameworks, governance roles, gate criteria and steering information across projects.",
+          when: "When governance exists but decisions and escalation are not working in practice.",
         },
         {
-          title: "Hands-on Decision Support",
+          title: "Hands-on Project Support",
           icon: "support",
           purpose:
-            "Senior, embedded support to align technical and commercial threads during critical phases.",
-          when: "When teams need focused decision support, not more reporting.",
+            "Embedded support to shape early decisions, prepare gates, and translate improvement advice into implementation.",
+          when: "When a critical project needs direct owner-side reinforcement.",
         },
-      ],
+      ] as EngagementItem[],
       footerSymbol: "(c)",
     },
   },
 };
-
-
-

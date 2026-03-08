@@ -1,9 +1,9 @@
-import PageFooterDark from "@/components/sections/PageFooterDark";
+import HomeFooter from "@/components/sections/HomeFooter";
 import EngagementCard from "@/components/ui/EngagementCard";
 import { site } from "@/content/site";
 
 export default function Page() {
-  const { pages, companyName } = site;
+  const { pages, home, companyName, contactEmail } = site;
   const { engagements } = pages;
 
   return (
@@ -28,9 +28,11 @@ export default function Page() {
         </div>
       </section>
 
-      <PageFooterDark
+      <HomeFooter
         companyName={companyName}
-        symbol={engagements.footerSymbol}
+        copyrightSymbol={home.contact.copyrightSymbol}
+        company={home.footer.company}
+        email={contactEmail}
       />
     </main>
   );

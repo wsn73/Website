@@ -1,9 +1,12 @@
+import BulletList from "../ui/BulletList";
+
 type HomeContactProps = {
   eyebrow: string;
   title: string;
   ctaLabel: string;
   ctaHref: string;
   reassurance: string;
+  highlights?: string[];
 };
 
 export default function HomeContact({
@@ -12,10 +15,11 @@ export default function HomeContact({
   ctaLabel,
   ctaHref,
   reassurance,
+  highlights,
 }: HomeContactProps) {
   return (
     <section className="border-b border-slate-200 bg-white">
-      <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8">
+      <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:px-8 lg:py-24">
         <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
           <p className="text-xs uppercase tracking-[0.35em] text-[#90A2CF]">
             {eyebrow}
@@ -28,8 +32,13 @@ export default function HomeContact({
             >
               {ctaLabel}
             </a>
-            <p className="text-base text-slate-600 sm:text-lg">{reassurance}</p>
+            {reassurance ? (
+              <p className="text-base text-slate-600 sm:text-lg">{reassurance}</p>
+            ) : null}
           </div>
+          {highlights?.length ? (
+            <BulletList items={highlights} className="mt-6" />
+          ) : null}
         </div>
       </div>
     </section>

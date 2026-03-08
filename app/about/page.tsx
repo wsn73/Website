@@ -1,8 +1,8 @@
-import PageFooterDark from "@/components/sections/PageFooterDark";
+import HomeFooter from "@/components/sections/HomeFooter";
 import { site } from "@/content/site";
 
 export default function Page() {
-  const { pages, companyName } = site;
+  const { pages, home, companyName, contactEmail } = site;
 
   return (
     <main>
@@ -17,9 +17,11 @@ export default function Page() {
         ))}
       </section>
 
-      <PageFooterDark
+      <HomeFooter
         companyName={companyName}
-        symbol={pages.about.footerSymbol}
+        copyrightSymbol={home.contact.copyrightSymbol}
+        company={home.footer.company}
+        email={contactEmail}
       />
     </main>
   );
