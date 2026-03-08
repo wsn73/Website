@@ -1,3 +1,12 @@
+type EngagementIcon = "review" | "governance" | "support";
+
+type EngagementItem = {
+  title: string;
+  icon: EngagementIcon;
+  purpose: string;
+  when: string;
+};
+
 export const site = {
   companyName: "Saint Consulting",
   contactEmail: "wouter@saintconsulting.nl",
@@ -144,7 +153,7 @@ export const site = {
             "Senior, embedded support to align technical and commercial threads during critical phases.",
           when: "When teams need focused decision support, not more reporting.",
         },
-      ],
+      ] as EngagementItem[],
       footerSymbol: "(c)",
     },
   },
