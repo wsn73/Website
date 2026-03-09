@@ -13,9 +13,9 @@ export const site = {
   home: {
     hero: {
       title:
-        "Helping companies make critical project decisions before execution begins",
+        "Protecting project value through better decisions",
       subhead:
-        "Independent support in the front-end of capital projects, where direction, governance and investment readiness need to become clear before major commitments are made.",
+        "Capital projects move forward under uncertainty, with real value at stake and decisions that cannot easily be undone. Saint Consulting helps leadership teams improve decision quality in the early phases of a project so that progress is deliberate, not accidental. Support can be applied more broadly when governance, project control or delivery setup need strengthening.",
       description:
         "Saint works with decision makers to strengthen early project phases, decision readiness and alignment between technical and commercial development. It is not necessary to have the scope fully defined at the outset - an initial conversation often helps clarify where value can be added.",
       cta: { label: "Start a conversation", href: "/contact" },
@@ -24,7 +24,7 @@ export const site = {
       eyebrow: "The problem",
       title: "Where decision quality breaks down",
       intro:
-        "Capital projects rarely struggle because of lack of expertise. More often, a clear decision framework is missing and it is unclear how technical and commercial progress align and which documents need to be produced when.",
+        "Capital projects rarely struggle because of lack of expertise. More often, a clear decision framework is missing and it is unclear how technical and commercial progress aligns and which documents need to be produced when.",
       items: [
         {
           title: "Deliverables do not support the decisions to be made",
@@ -73,7 +73,7 @@ export const site = {
       eyebrow: "Typical areas of support",
       title: "Where Saint can help",
       summary:
-        "In practice, this means helping projects organise the front-end phases around clear decisions, aligned workstreams, and decision-ready information.",
+        "In practice, this means helping projects structure early phases around the decisions that need to be made, often working closely with project leaders and their teams to build clarity around key choices. Depending on the situation, this can also extend to strengthening governance, project control or the overall project setup.",
       items: [
         {
           title: "Structuring early project phases",
@@ -95,20 +95,20 @@ export const site = {
       eyebrow: "Form of support",
       title: "Our Services",
       intro:
-        "Depending on the situation and stage of the project, Saint can support through a number of focused services.",
+        "Projects typically reach out when greater clarity or control is needed. For example when key decisions approach, governance needs strengthening, or a project requires an independent view on its direction. Depending on the situation and stage of the project, Saint provides several focused forms of support.",
       link: { label: "View services overview", href: "/engagements" },
       items: [
         {
           title: "Project Reviews",
-          body: "Independent assessment of decision readiness, delivery risks and immediate priorities.",
+          body: "Independent assessment of decision readiness, delivery risks and project priorities. Reviews provide leadership teams with a clear view of the project situation and the choices that require attention.",
         },
         {
           title: "Governance Setup",
-          body: "Clear decision rights, gate criteria and steering structure that work in practice.",
+          body: "Designing practical governance structures, decision processes and project organisation that support clear accountability and effective project control.",
         },
         {
           title: "Hands-on Support",
-          body: "Targeted owner-side reinforcement during critical project phases and decision moments.",
+          body: "Targeted owner-side reinforcement during critical project phases, helping leadership teams and project organisations regain clarity, stability and forward momentum.",
         },
       ],
     },
@@ -156,8 +156,8 @@ export const site = {
         "Saint Consulting was founded by Wouter Sint Nicolaas after more than 25 years working on capital projects at organisations including Shell, AkzoNobel / Nobian and HyCC.",
         "Over the years he worked across project development, project management and owner-side governance. This provided a close view of how large projects actually move forward: not only through engineering and execution, but through the decisions that shape them.",
         "In many projects he observed a similar pattern. Experienced teams and strong technical work are in place, yet progress becomes uncertain because key decisions remain partially open, are revisited, or are not supported by aligned technical and commercial development.",
-        "By the time difficulties appear during execution, most of the important choices have already been made.",
-        "Saint Consulting focuses on those earlier phases of projects, working with decision-makers to strengthen how projects prepare and test the decisions that define the direction of the project.",
+        "Much of this work therefore takes place in direct conversation with project leaders and their teams, helping structure complex discussions, challenge assumptions and build clarity around the choices ahead.",
+        "Saint Consulting focuses on the earlier phases of projects, helping leadership teams ensure that critical decisions are prepared, tested and closed with the clarity required to move forward with confidence.",
         "The name Saint reflects both the founder’s surname and Saint Nicholas, the protector of sailors and merchants; a reminder that when visibility is limited and the stakes are high, progress depends on judgment, clarity and steady navigation.",
       ],
       footerSymbol: "(c)",
@@ -165,7 +165,7 @@ export const site = {
     contact: {
       title: "Contact",
       intro:
-        "For project or portfolio support, you can contact Wouter (founder of Saint Consulting) directly by email.",
+        "For project or portfolio support, you can contact Wouter Sint Nicolaas, founder of Saint Consulting, directly by email.",
       emailLabel: "Email",
       requestNote:
         "A short note describing your situation, the current project phase, key decision moments, and preferred timing for a first conversation is helpful.",

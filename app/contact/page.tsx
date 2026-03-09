@@ -14,12 +14,7 @@ export default function Page() {
             </h2>
 
             <p className="mt-6 text-lg leading-relaxed text-slate-600">
-              For project or portfolio support, you can contact
-              <span className="font-medium text-slate-900">
-                {" "}
-                Wouter, founder of Saint Consulting
-              </span>{" "}
-              directly by email.
+              {pages.contact.intro}
             </p>
           </div>
 
@@ -37,9 +32,7 @@ export default function Page() {
           </div>
 
           <p className="mt-8 max-w-2xl leading-relaxed text-slate-600">
-            If helpful, please include a short description of your situation,
-            the current phase of the project, key decision moments ahead, and
-            your preferred timing for an initial conversation.
+            {pages.contact.requestNote}
           </p>
         </div>
       </section>
