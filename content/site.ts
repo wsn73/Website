@@ -16,8 +16,6 @@ export const site = {
         "Protecting project value through better decisions",
       subhead:
         "Capital projects move forward under uncertainty, with real value at stake and decisions that cannot easily be undone. Saint Consulting helps leadership teams improve decision quality in the early phases of a project so that progress is deliberate, not accidental. Support can be applied more broadly when governance, project control or delivery setup need strengthening.",
-      description:
-        "Saint works with decision makers to strengthen early project phases, decision readiness and alignment between technical and commercial development. It is not necessary to have the scope fully defined at the outset - an initial conversation often helps clarify where value can be added.",
       cta: { label: "Start a conversation", href: "/contact" },
     },
     problem: {
