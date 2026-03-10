@@ -15,7 +15,7 @@ export const site = {
       title:
         "Protecting project value by bringing clarity to critical decisions",
       subhead:
-        "Capital projects move forward under uncertainty, with significant value at stake and commitments that cannot easily be undone. Saint Consulting helps leadership teams create clarity in the early phases of projects so that decisions are deliberate, aligned and based on a sound understanding of the issues at hand. Support can also extend to governance, project control and delivery setup when projects need stronger structure and direction.",
+        "Capital projects move forward under uncertainty, with significant value at stake and commitments that cannot easily be undone. Saint Consulting helps leadership teams create clarity in the early phases of projects so that decisions are deliberate, aligned and based on a sound understanding of the issues at hand. Our services also extend to governance, project control and delivery setup when project need stronger structure and direction.",
       cta: { label: "Start a conversation", href: "/contact" },
     },
     problem: {
@@ -25,7 +25,7 @@ export const site = {
         "Capital projects rarely struggle because of lack of expertise. More often, problems begin in the early phases, when critical issues are not fully resolved, technical and commercial development do not stay aligned, and teams move forward without a sufficiently solid basis for commitment.",
       items: [
         {
-          title: "Deliverables do not support the decisions to be made",
+          title: "Deliverables do not support the decision making",
           body: "Large volumes of documentation are produced, but it remains unclear what information is required for a specific decision. Different options are supported by different levels of evidence, while key assumptions and open issues remain difficult to identify.",
         },
         {
@@ -37,8 +37,8 @@ export const site = {
           body: "Tollgates are intended to confirm that key issues have been properly addressed before a project moves forward. In practice, criteria are sometimes interpreted flexibly and projects progress while assumptions remain open. When gate discipline weakens, earlier choices often return for discussion later in the project.",
         },
         {
-          title: "The problems surface during execution",
-          body: "When projects move into execution without a sufficiently developed front-end, changes become far more disruptive. Every adjustment hits cost and schedule harder, often leading to overruns, delays and assets that ultimately underperform expectations.",
+          title: "Problems surface during execution",
+          body: "When projects move into execution without sufficient front-end development, changes become far more disruptive. Every adjustment hits cost and schedule harder, often leading to overruns, delays and assets that ultimately underperform expectations.",
         },
       ],
     },
@@ -68,17 +68,17 @@ export const site = {
         "These situations often arise in the front-end development phase, before execution commitments are made.",
     },
     principles: {
-      eyebrow: "Typical areas of support",
-      title: "Where Saint can help",
+      eyebrow: "Our areas of support",
+      title: "Where projects need help",
       summary:
-        "In practice this means helping projects structure the early phases, clarify what must be resolved and keep technical and commercial development aligned. It also involves finding the right balance between investing scarce pre-FID resources in project definition and reducing risk before major commitments are made. Depending on the situation, support can extend to governance, project control or the overall project setup.",
+        "In practice this means helping projects structure the early phases, clarify what must be resolved and keep technical and commercial development aligned. It also involves finding the right balance between investing scarce pre-FID resources in project definition and reducing risk before major commitments are made. Depending on the specific project needs, support can extend to governance, project control or the overall project setup.",
       items: [
         {
           title: "Structuring early project phases",
           body: "Clarifying how the front-end should be organised and what decisions need to be made when.",
         },
         {
-          title: "Keeping technical and commercial development aligned",
+          title: "Aligning technical and commercial development",
           body: "Helping workstreams move together rather than separately.",
         },
         {
@@ -91,7 +91,7 @@ export const site = {
     },
     engagements: {
       eyebrow: "Form of support",
-      title: "Our Services",
+      title: "Where we help",
       intro:
         "Projects typically reach out when key issues approach a point of commitment, when governance or project structure needs strengthening, or when leadership teams want an independent view on project readiness and direction. Depending on the situation, Saint provides several focused forms of support.",
       link: { label: "View services overview", href: "/engagements" },
@@ -115,7 +115,7 @@ export const site = {
       title: "Start a conversation",
       ctaLabel: "Schedule an introduction",
       reassurance:
-        "It is not necessary to have the scope fully defined at the outset. A first conversation can help clarify what is needed and whether Saint can add value.",
+        "It is not necessary to have the scope fully defined at the outset.",
       highlights: [],
       copyrightSymbol: "©",
     },
@@ -165,8 +165,7 @@ export const site = {
       intro:
         "For project or portfolio support, you can contact Wouter Sint Nicolaas, founder of Saint Consulting, directly by email.",
       emailLabel: "Email",
-      requestNote:
-        "A short note describing your situation, the current project phase, key decision moments, and preferred timing for a first conversation is helpful.",
+      requestNote: "",
       footerSymbol: "(c)",
     },
     engagements: {

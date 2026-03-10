@@ -42,6 +42,7 @@ export default function Page() {
         copyrightSymbol={home.contact.copyrightSymbol}
         company={home.footer.company}
         email={contactEmail}
+        showLinkedIn
       />
     </main>
   );
