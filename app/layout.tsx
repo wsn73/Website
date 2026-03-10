@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import Image from "next/image";
+import Script from "next/script";
 import { DM_Serif_Display, Montserrat } from "next/font/google";
 
 const serif = DM_Serif_Display({ weight: "400", subsets: ["latin"] });
@@ -21,6 +22,20 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="nl">
+      <head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-ZGRBCLMHTK"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-ZGRBCLMHTK');
+          `}
+        </Script>
+      </head>
       <body className="bg-white text-zinc-900">
         <div className="min-h-dvh">
           <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/80 text-slate-900 backdrop-blur">
