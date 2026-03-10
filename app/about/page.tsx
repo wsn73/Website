@@ -14,7 +14,7 @@ export default function Page() {
             <h1 className="font-serif text-3xl leading-[1.05] text-slate-900 sm:text-4xl lg:text-5xl">
               {pages.about.title}
             </h1>
-            <div className="relative mx-auto mt-8 w-full max-w-[180px] md:hidden">
+            <div className="relative mt-8 w-full max-w-[180px] md:hidden">
               <Image
                 src={wsnImage}
                 alt="Wouter - founder of Saint Consulting"
