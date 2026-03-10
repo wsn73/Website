@@ -151,10 +151,10 @@ export const site = {
     about: {
       title: "About Saint",
       paragraphs: [
-        "After more than 25 years working on large capital projects at Shell, AkzoNobel (later Nobian) and HyCC, I decided to start my own firm: Saint Consulting.",
+        "After more than 25 years working on large capital projects, including roles at Shell, AkzoNobel (later Nobian) and HyCC, I decided to start my own firm: Saint Consulting.",
         "The name “Saint” refers to Saint Nicholas, traditionally known as the protector of sailors and merchants. It also reflects my own surname. In earlier times ships often had to leave harbour without knowing exactly what conditions they would encounter at sea. Waiting for perfect certainty was not an option, but moving forward without sufficient preparation could easily end badly.",
         "Large capital projects face a similar reality. Major investments must move forward while uncertainty still exists, and the quality of the preparation before those commitments are made often determines how the project unfolds later.",
-        "Over the years I often found myself working around the moments where projects move from exploration into commitment. These are the phases where technical questions, commercial considerations and organisational dynamics all come together.",
+        "Over the years I worked frequently around the moments where projects move from exploration into commitment and major investments take shape. These are the phases where technical questions, commercial considerations and organisational dynamics all come together.",
         "My mission with Saint Consulting is to help project organisations move forward through those moments. That means not only strengthening processes and information, but also supporting the human side of projects, helping teams align, structure complex discussions and create the conditions for sound judgement.",
         "The aim is simple: helping projects move forward on a solid basis before major commitments are made.",
       ],
