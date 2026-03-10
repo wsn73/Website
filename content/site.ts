@@ -3,7 +3,7 @@ type EngagementIcon = "review" | "governance" | "support";
 type EngagementItem = {
   title: string;
   icon: EngagementIcon;
-  purpose: string;
+  purpose: string | string[];
   when: string;
 };
 
@@ -13,32 +13,32 @@ export const site = {
   home: {
     hero: {
       title:
-        "Protecting project value through better decisions",
+        "Protecting project value by bringing clarity to critical decisions",
       subhead:
-        "Capital projects move forward under uncertainty, with real value at stake and decisions that cannot easily be undone. Saint Consulting helps leadership teams improve decision quality in the early phases of a project so that progress is deliberate, not accidental. Support can be applied more broadly when governance, project control or delivery setup need strengthening.",
+        "Capital projects move forward under uncertainty, with significant value at stake and commitments that cannot easily be undone. Saint Consulting helps leadership teams create clarity in the early phases of projects so that decisions are deliberate, aligned and based on a sound understanding of the issues at hand. Support can also extend to governance, project control and delivery setup when projects need stronger structure and direction.",
       cta: { label: "Start a conversation", href: "/contact" },
     },
     problem: {
       eyebrow: "The problem",
-      title: "Where decision quality breaks down",
+      title: "Where projects drift in early phases",
       intro:
-        "Capital projects rarely struggle because of lack of expertise. More often, a clear decision framework is missing and it is unclear how technical and commercial progress aligns and which documents need to be produced when.",
+        "Capital projects rarely struggle because of lack of expertise. More often, problems begin in the early phases, when critical issues are not fully resolved, technical and commercial development do not stay aligned, and teams move forward without a sufficiently solid basis for commitment.",
       items: [
         {
           title: "Deliverables do not support the decisions to be made",
           body: "Large volumes of documentation are produced, but it remains unclear what information is required for a specific decision. Different options are supported by different levels of evidence, while key assumptions and open issues remain difficult to identify.",
         },
         {
-          title: "Technical and commercial work drift apart",
-          body: "Engineering and commercial workstreams progress in parallel, but not closely enough aligned. Options evolve, costs shift, and risks change without a shared decision view, making robust project choices difficult.",
+          title: "Technical and commercial work diverge",
+          body: "Engineering and commercial workstreams progress in parallel but do not stay aligned. Scope, cost and risk evolve separately, making it harder to maintain a consistent project direction.",
         },
         {
-          title: "Decision gates leave key issues unresolved",
-          body: "Criteria may be interpreted flexibly, documentation accepted conditionally, and projects proceed despite unresolved assumptions or incomplete evidence.",
+          title: "Weak tollgate discipline",
+          body: "Tollgates are intended to confirm that key issues have been properly addressed before a project moves forward. In practice, criteria are sometimes interpreted flexibly and projects progress while assumptions remain open. When gate discipline weakens, earlier choices often return for discussion later in the project.",
         },
         {
-          title: "Decisions lack robustness",
-          body: "Projects appear to move forward, but earlier decisions are repeatedly revisited. Trade-offs were not fully explored, key assumptions remained implicit, and uncertainties were not resolved before approval.",
+          title: "The problems surface during execution",
+          body: "When projects move into execution without a sufficiently developed front-end, changes become far more disruptive. Every adjustment hits cost and schedule harder, often leading to overruns, delays and assets that ultimately underperform expectations.",
         },
       ],
     },
@@ -71,7 +71,7 @@ export const site = {
       eyebrow: "Typical areas of support",
       title: "Where Saint can help",
       summary:
-        "In practice, this means helping projects structure early phases around the decisions that need to be made, often working closely with project leaders and their teams to build clarity around key choices. Depending on the situation, this can also extend to strengthening governance, project control or the overall project setup.",
+        "In practice this means helping projects structure the early phases, clarify what must be resolved and keep technical and commercial development aligned. It also involves finding the right balance between investing scarce pre-FID resources in project definition and reducing risk before major commitments are made. Depending on the situation, support can extend to governance, project control or the overall project setup.",
       items: [
         {
           title: "Structuring early project phases",
@@ -87,26 +87,26 @@ export const site = {
         },
       ],
       closing:
-        "The aim is not to add more process, but to help make the right decisions at the right moment.",
+        "The aim is simple: resolve critical issues early so that uncertainty does not later turn into delay, redesign or loss of momentum.",
     },
     engagements: {
       eyebrow: "Form of support",
       title: "Our Services",
       intro:
-        "Projects typically reach out when greater clarity or control is needed. For example when key decisions approach, governance needs strengthening, or a project requires an independent view on its direction. Depending on the situation and stage of the project, Saint provides several focused forms of support.",
+        "Projects typically reach out when key issues approach a point of commitment, when governance or project structure needs strengthening, or when leadership teams want an independent view on project readiness and direction. Depending on the situation, Saint provides several focused forms of support.",
       link: { label: "View services overview", href: "/engagements" },
       items: [
         {
           title: "Project Reviews",
-          body: "Independent assessment of decision readiness, delivery risks and project priorities. Reviews provide leadership teams with a clear view of the project situation and the choices that require attention.",
+          body: "Independent assessment of project readiness, key risks and unresolved issues. Reviews help leadership teams understand the real project situation and what needs attention before further commitments are made.",
         },
         {
           title: "Governance Setup",
-          body: "Designing practical governance structures, decision processes and project organisation that support clear accountability and effective project control.",
+          body: "Designing practical governance structures, roles and ways of working that support clear accountability, alignment and effective project control.",
         },
         {
           title: "Hands-on Support",
-          body: "Targeted owner-side reinforcement during critical project phases, helping leadership teams and project organisations regain clarity, stability and forward momentum.",
+          body: "Targeted owner-side reinforcement during critical project phases, helping leadership teams regain structure, focus and forward momentum.",
         },
       ],
     },
@@ -151,12 +151,12 @@ export const site = {
     about: {
       title: "About Saint",
       paragraphs: [
-        "Saint Consulting was founded by Wouter Sint Nicolaas after more than 25 years working on capital projects at organisations including Shell, AkzoNobel / Nobian and HyCC.",
-        "Over the years he worked across project development, project management and owner-side governance. This provided a close view of how large projects actually move forward: not only through engineering and execution, but through the decisions that shape them.",
-        "In many projects he observed a similar pattern. Experienced teams and strong technical work are in place, yet progress becomes uncertain because key decisions remain partially open, are revisited, or are not supported by aligned technical and commercial development.",
-        "Much of this work therefore takes place in direct conversation with project leaders and their teams, helping structure complex discussions, challenge assumptions and build clarity around the choices ahead.",
-        "Saint Consulting focuses on the earlier phases of projects, helping leadership teams ensure that critical decisions are prepared, tested and closed with the clarity required to move forward with confidence.",
-        "The name Saint reflects both the founder’s surname and Saint Nicholas, the protector of sailors and merchants; a reminder that when visibility is limited and the stakes are high, progress depends on judgment, clarity and steady navigation.",
+        "After more than 25 years working on large capital projects at Shell, AkzoNobel (later Nobian) and HyCC, I decided to start my own firm: Saint Consulting.",
+        "The name “Saint” refers to Saint Nicholas, traditionally known as the protector of sailors and merchants. It also reflects my own surname. In earlier times ships often had to leave harbour without knowing exactly what conditions they would encounter at sea. Waiting for perfect certainty was not an option, but moving forward without sufficient preparation could easily end badly.",
+        "Large capital projects face a similar reality. Major investments must move forward while uncertainty still exists, and the quality of the preparation before those commitments are made often determines how the project unfolds later.",
+        "Over the years I often found myself working around the moments where projects move from exploration into commitment. These are the phases where technical questions, commercial considerations and organisational dynamics all come together.",
+        "My mission with Saint Consulting is to help project organisations move forward through those moments. That means not only strengthening processes and information, but also supporting the human side of projects, helping teams align, structure complex discussions and create the conditions for sound judgement.",
+        "The aim is simple: helping projects move forward on a solid basis before major commitments are made.",
       ],
       footerSymbol: "(c)",
     },
@@ -177,22 +177,30 @@ export const site = {
         {
           title: "Project Reviews",
           icon: "review",
-          purpose:
-            "Independent readiness and assurance reviews to test decision quality, expose delivery risks and clarify priority actions.",
-          when: "When leadership needs a fast, realistic view before a major decision.",
+          purpose: [
+            "Independent reviews of project readiness to test assumptions, expose delivery risks and clarify where priorities should lie.",
+            "Depending on the scope, Saint can assemble a small review team from its network to ensure that technical, commercial and project delivery perspectives are properly addressed.",
+          ],
+          when:
+            "When leadership needs a clear and realistic view of the project situation before major commitments are made.",
         },
         {
           title: "Project Governance Setup",
           icon: "governance",
-          purpose:
-            "Designing or strengthening decision frameworks, governance roles, gate criteria and steering information across projects.",
-          when: "When governance exists but decisions and escalation are not working in practice.",
+          purpose: [
+            "Designing or strengthening practical governance structures, decision roles and escalation paths so that projects can move forward while maintaining clear oversight and accountability.",
+            "This includes defining how information flows into steering discussions and ensuring that technical and commercial perspectives remain aligned.",
+          ],
+          when:
+            "When governance exists on paper but decisions, escalation or alignment are not working well in practice.",
         },
         {
           title: "Hands-on Project Support",
           icon: "support",
-          purpose:
-            "Embedded support to shape early decisions, prepare gates, and translate improvement advice into implementation.",
+          purpose: [
+            "Owner-side reinforcement during critical project phases, helping structure discussions, prepare commitment points and translate improvement ideas into practical action.",
+            "The focus is always on helping the project organisation regain structure, alignment and forward momentum.",
+          ],
           when: "When a critical project needs direct owner-side reinforcement.",
         },
       ] as EngagementItem[],

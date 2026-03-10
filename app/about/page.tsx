@@ -1,6 +1,7 @@
 import Image from "next/image";
 import HomeFooter from "@/components/sections/HomeFooter";
 import { site } from "@/content/site";
+import wsnImage from "@/public/wsn.jpg";
 
 export default function Page() {
   const { pages, home, companyName, contactEmail } = site;
@@ -25,7 +26,7 @@ export default function Page() {
 
           <div className="relative w-full max-w-[250px] md:justify-self-end">
             <Image
-              src="/wsn.jpg"
+              src={wsnImage}
               alt="Wouter - founder of Saint Consulting"
               width={250}
               height={300}

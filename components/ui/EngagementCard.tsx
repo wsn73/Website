@@ -1,6 +1,6 @@
 type EngagementCardProps = {
   title: string;
-  purpose: string;
+  purpose: string | string[];
   when: string;
   icon?: "review" | "governance" | "support";
 };
@@ -81,13 +81,19 @@ export default function EngagementCard({
   when,
   icon,
 }: EngagementCardProps) {
+  const purposeParagraphs = Array.isArray(purpose) ? purpose : [purpose];
+
   return (
-    <div className="group rounded-2xl border border-[#D9E0F5] bg-[#F5F7FF] p-6 shadow-sm transition hover:shadow-md">
+    <div className="group rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-sm transition hover:shadow-md">
       <div className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-100 text-[#4A5D93]">
         <Icon icon={icon} />
       </div>
       <h3 className="mt-4 text-xl font-semibold text-slate-900">{title}</h3>
-      <p className="mt-3 text-base leading-7 text-slate-600">{purpose}</p>
+      <div className="mt-3 space-y-4 text-base leading-7 text-slate-600">
+        {purposeParagraphs.map((paragraph) => (
+          <p key={paragraph}>{paragraph}</p>
+        ))}
+      </div>
       <p className="mt-4 text-sm font-semibold uppercase tracking-[0.2em] text-[#4A5D93]">
         When to use
       </p>
